@@ -1,0 +1,326 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: #E7DFDD;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+span{
+    color: #23BE53;
+}
+a:link, :visited{
+    color:#E7DFDD;
+    text-decoration: none;
+}
+a:hover{
+    color:#23BE53;
+}
+.header1, .header1 ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.header1 ul li{
+    padding: 13px;
+    font-size: 1.5rem;
+}
+.header1 h2{
+    font-size: 2.5rem;
+}
+#botoes{
+    background-color: #23BE53;
+    border-radius: 10%;
+
+}
+#botoes a:hover{
+    color: black;
+}
+section{
+    width: 95vw;
+    height: 100vh;
+}
+.container{
+margin-inline: 5%;
+border: solid transparent;
+
+}
+.containerintern{
+    margin-inline: 10%;
+    height: 80vh;   
+}
+.section1{
+    width: 100%;
+    margin-top: 10%;
+}
+.section1 h3,.section1 h2,.section1 p,.section1 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1 h3{
+font-size: 2rem
+}
+.section1 h2{
+    font-size: 2.5rem;
+    color:#23BE53;
+}
+.section1 p{
+    font-size: 1.5rem;
+    margin-inline: 25%;
+}
+.section1 a{
+
+    position: absolute;
+    margin-inline: 31%;
+    border-radius: 10%;
+    background-color: #23BE53;
+    font-size: 1.5rem;   
+    margin-top: 3%;
+    padding: 1.5%;
+}   
+#mycv:hover{
+color: black;
+}
+.title{
+    font-size: 2.5rem;
+}
+.section2{
+    display: grid;
+    grid-template-areas: 'card1 card2 card3';
+    width: 100%;
+    height: 100%;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 5%;
+
+    align-items: center;
+}
+.cardsect2{
+    height: 50%;
+    border-radius: 10%;
+    border-bottom:#23BE53 solid 30px;
+    background-color: black;
+    background-position:top center;
+    background-position-y: 40px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:end;
+    line-height: 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-size: 35%;
+}
+#card1{
+    grid-area: card1;
+    background-image: url(./html.png);
+}
+#card2{
+    grid-area: card2;
+    margin-bottom: 40%;
+    background-image: url(./JS.png);
+}
+#card3{
+    grid-area: card3;
+    background-image: url(./css.png);
+}
+.section3{
+    display: grid;
+    grid-template-areas:'projeto1 projeto2'
+                        'projeto3 projeto4';
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    gap: 5%;
+    color: white;
+}
+.cardsect3{
+    border-bottom: #23BE53 solid 30px;
+    border-radius: 10%;
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    color: #23BE53;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+#card11{
+    grid-area: projeto1;
+
+    background-image: url(./p3.jpg);
+}
+#card22{
+    grid-area: projeto2;
+    background-image: url(./socialt.jpg);
+}
+#card33{
+    grid-area: projeto3;
+    background-image: url(./bl.jpg);
+}
+#card44{
+    grid-area: projeto4;
+    background-image: url(./pf.jpg);
+}
+.section4{
+    display: grid;
+    grid-template-areas: 'aboutme foto';
+    grid-template-columns: 2fr 1fr;
+    height: 100%;
+    width: 100%;
+    gap: 5%;
+    align-items: center;
+}
+.cardsabout{
+    border-bottom: #23BE53 solid 30px;
+    border-radius: 10%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+#title-text{
+    grid-area: aboutme;
+    font-size: 1.5rem;
+}
+#title-text p{
+    width: 60%;
+}
+#myphoto{
+    grid-area: foto;
+    background-image: url(./fotov.jpg);
+}
+.backg{
+    background-image: url(./vector\ \(1\).png);
+    background-attachment:fixed;
+    background-size:cover;
+    height: 104vh;
+    width: 99vw ;
+
+}
+footer h2{
+    font-size: 2.2rem;
+}
+footer p{
+    font-size: 1.2rem;
+}
+.footer1, .footer1 ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.footer1 ul li{
+    padding: 10px;
+}
+
+@media (max-width:725px){
+.header1{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+.header1 h2{
+    font-size: 2.5rem;
+}
+.header1 nav ul li{
+font-size: 1rem;
+display: flex;
+}
+#botoes{
+    margin-right:58px;
+}
+.section1 h3{
+    font-size: 1.5rem;
+}
+.section1 h2{
+    font-size: 2rem;
+    color:#23BE53;
+}
+.section1 p{
+    font-size: 1rem;
+
+}
+.section1 a{
+    height: 70px;
+    width: 140px;
+position: static;
+margin-left:62px;
+margin-top: 60px;
+}
+.section2{
+    gap: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.cardsect2{
+    height: 100%;
+    font-size: 1rem;
+line-height: 0.1rem;
+    color:#23BE53;
+    background-position: top center;
+    width: 70%;
+    border: solid;
+}
+#card2{
+   margin: 0%;
+}
+.cardsect3{
+    background-size: cover;
+    border:#23BE53 solid;
+    font-size: 0.5rem;
+    
+}
+#title-text{
+    height: 95%;
+}
+#title-text p{
+    font-size: 1rem;
+}
+#title-text h2{
+    font-size: 1.1rem;
+}
+.section4{
+grid-template-areas: 'aboutme'
+                    'foto';
+                    align-items: center;
+                    justify-content: center;
+    grid-template-rows: 1fr 1fr;
+}
+.cardsabout{
+width: 100%;
+margin-left:30%;
+border:#23BE53 solid;
+}
+#myphoto{
+    height: 90%;
+}
+footer{
+    width: 97%;
+}
+footer h2{
+    font-size: 1.5rem;
+}
+footer p{
+    font-size: 1.1rem;
+    margin-left: 5%;
+}
+.footer1 ul li{
+    padding: 5px;
+}
+}
