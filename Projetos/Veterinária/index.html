@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Icones no material design icons -> download e pegar o link acrescentando o https:// -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"> 
+    <!-- Link Icones -> install e pegar o cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <!-- CSS only -> pegar o link de css do bootstrap e colocar no google, dps salvar em uma pasta com ctrl+s dentro da que quer modificar pegando
+    o bootstrap.min.css -->
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="img/veterinario.png">
+</head>
+<body data-bs-spy="scroll" data-bs-target="menu">
+<span id="topo"></span>
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-5 border-bottom sticky-top bg-light">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <span class="text-primary fs-4 fw-bold "><i class="mdi mdi-dog"></i> Doguinho's</span>
+      </a>
+      <ul id="menu"class="nav nav-pills">
+        <div class="form-check form-switch ms-auto mt-2 me-5">
+          <label id="icone-toggle"class="form-check-label ms-3" for="lightSwitch">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+              <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+              <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+            </svg>
+              <path
+                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+              />
+            </svg>
+          </label>
+          <input class="form-check-input" type="checkbox" id="lightSwitch" />
+        </div>
+        <li class="nav-item"><a href="#topo" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+        <li class="nav-item"><a href="#precos" class="nav-link">Preços</a></li>
+        <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+        <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+    </header>
+    <section>
+      <div class="row">
+        <div class="col-md-6 mt-5 text-center text-md-start ">
+          <h2 class="fs-5">Aqui o seu amigo é tratado com carinho</h2>
+          <h1 class="display-3 fw-bold mt-4">Clínica Veterinária</h1>
+          <p class="fw-light mt-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto a aperiam assumenda eaque tempore 
+            quod dolore autem commodi,laudantium odit voluptatem, voluptates quos, culpa aspernatur. Quisquam quam alias sed ullam. </p>
+          <a href="https://api.whatsapp.com/send?phone=550&text=OL%C3%81%20EU%20EU%20EU" class="btn btn-lg p-4 w-50 btn-primary mt-5 fw-bold">Agendar consulta <i class="mdi mdi-arrow-right-bold w-1"></i></a>
+          </div>
+        <div class="col-md-6 mt-0">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_erya171l.json"  background="transparent"  speed="1"  
+          style="max-width: 70%;" class="m-0 m-auto float-none float-md-end"  loop  autoplay></lottie-player>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="servicos" class="text-center my-5 py-5">
+      <div class="row pt-5 my-5">
+        <div class="col-12">
+          <h2 class="display-5 fw-semibold mb-5">Serviços Prestados</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 mt-3">
+          <img src="./img/vacinado.png" alt="" class="rounded-circle border shadow p-5">
+          <h2 class="fw-normal">Vacinação</h2>
+          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+          <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4 mt-3">
+          <img src="./img/veterinario.png" alt="" class="rounded-circle border shadow p-5">          
+          <h2 class="fw-normal">Emergências</h2>
+          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+          <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4 mt-3">
+          <img src="./img/dog.png" alt="" class="rounded-circle border shadow p-5">          
+          <h2 class="fw-normal">Raio-X</h2>
+          <p>And lastly this, the third column of representative placeholder content.</p>
+          <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        </div>
+        <!-- /.col-lg-4 -->
+      </div>
+    </section>  
+
+
+    <section id="precos" class="mt-5 p-5">
+      <div class="pricing-header pt-5 mt-5 text-center">
+        <h1 class="display-5 fw-semibold mb-5">Preços</h1>
+        <p class="text-muted mb-5 fs-5">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-white bg-primary border-primary">
+              <h4 class="my-0 fw-normal">Enterprise</h4>
+            </div>
+            <div class="card-body bg-light">
+              <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>30 users included</li>
+                <li>15 GB of storage</li>
+                <li>Phone and email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-white bg-primary border-primary">
+              <h4 class="my-0 fw-normal">Enterprise</h4>
+            </div>
+            <div class="card-body bg-light">
+              <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>30 users included</li>
+                <li>15 GB of storage</li>
+                <li>Phone and email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-white bg-primary border-primary">
+              <h4 class="my-0 fw-normal">Enterprise</h4>
+            </div>
+            <div class="card-body bg-light">
+              <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>30 users included</li>
+                <li>15 GB of storage</li>
+                <li>Phone and email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <span id="faq"></span>
+  
+<section  class="py-5 my-5">
+  <div class="row pt-5 mt-5">
+    <div class="col-12 text-center">
+      <h2 class="display-5 fw-semibold">Perguntas Frequentes</h2>
+    </div>
+  </div>
+<div class="row mt-3">
+  <div class="col-12">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="text-primary accordion-button bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body bg-light">
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class=" text-primary accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body bg-light">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item ">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="text-primary accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body bg-light">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section id="contato" class="py-5 my-5">
+  <div class="row pt-5 mt-5">
+    <div class="col-12 text-center">
+      <h2 class="display-5 fw-semibold">Contato</h2>
+    </div>
+  </div>
+
+
+  <div class="row align-items-md-stretch">
+    <div class="col-md-6 text-center">
+      <div class="h-100 p-5 bg-light border rounded-3">
+        <h2>Add borders</h2>
+        <p class="p-5">Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
+        <p class="mt-4"><i class="mdi mdi-phone"></i>(00)00000 -0000</p>
+        <p class="mt-4"><i class="mdi mdi-email"></i>oioi@oi.com</p>
+        <a href="https://api.whatsapp.com/send?phone=550&text=OL%C3%81%20EU%20EU%20EU" class="btn btn-success p-3 w-75" type="button"><i class="mdi mdi-whatsapp"></i> Chamar Whatsapp</a>
+      </div>
+    </div>
+
+
+    <div class="col-md-6 text-center ">
+      <div class="h-100 p-5 bg-light border rounded-3">
+        <p class="p-5">rua do exemplo</p>
+        <iframe class="m-0 m-auto"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000.048564703404!2d-43.97227225!3d-19.965991649999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa697d2bf092d69%3A0x77f85862abd661ea!2sSupermercados%20BH!5e0!3m2!1spt-BR!2sbr!4v1657833891363!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="mt-5 p-5">
+  <p class="float-end"><a href="#">Ir para topo</a></p>
+  <p>© 2017–2022<span><i class="mdi mdi-dog"></i> Doguinho's - Clínica Veterinária </span><a class="ms-5"href="#">Politica de privacidade</a> · <a href="#">Termos de uso</a></p>
+</footer>
+</div>
+
+
+
+    <!-- liga e desliga luz -->
+  <script src="./js/switch.js"></script>
+ <!-- JS -> pegar o link de js do bootstrap e colocar no google, dps salvar em uma pasta com ctrl+s dentro da que quer modificar pegando
+    o bootstrap.bundle.min.js -->
+    <!-- Colocar no final do body -->
+<script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
